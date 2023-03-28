@@ -90,7 +90,7 @@ body {
     left: -.25rem;
     right: -.25rem;
     background: conic-gradient(
-        from 45deg,
+        from var(--gradient-angle),
         var(--brunswick-green),
         var(--fern-green),
         var(--timberwolf),

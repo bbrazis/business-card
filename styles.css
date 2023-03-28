@@ -54,13 +54,19 @@ body {
     height: 150px;
     grid-gap: 1rem;
     transform-style: preserve-3d;
-    transform: perspective(5000px) translateX(--rotateX)) translateY(--rotateY));
+    transform: perspective(5000px) translateX(var(--rotateX)) translateY(var(--rotateY));
     transition: transform 250ms ease;
+	animation: rotation 20s linear infinite;
     /*
     Challenge:
     Find a color palette you like on Coolors.co
     and use it in your business card.
      */
+}
+
+@keyframes rotation {
+	0% { --gradient-angle: rotate(0)}
+	100% { --gradient-angle: rotate(180deg)}
 }
 
 .card::before,

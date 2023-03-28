@@ -12,7 +12,7 @@
 }
 
 @property --gradient-angle {
-	syntax: “<angle>”;
+	syntax: "<angle>";
 	initial-value: 0deg;
 	inherits: false;
 }
@@ -54,7 +54,7 @@ body {
     height: 150px;
     grid-gap: 1rem;
     transform-style: preserve-3d;
-    transform: perspective(5000px) translateX(var(--rotateX)) translateY(var(--rotateY));
+    transform: perspective(5000px) translateX(--rotateX)) translateY(--rotateY));
     transition: transform 250ms ease;
     /*
     Challenge:

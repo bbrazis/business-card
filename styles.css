@@ -58,7 +58,7 @@ body {
     height: 150px;
     grid-gap: 1rem;
     transform-style: preserve-3d;
-    transform: perspective(5000px) rotateX(--rotateX) rotateY(--rotateY);
+    transform: perspective(5000px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
     transition: transform 250ms ease;
     animation: rotation 20s linear infinite;
     /*

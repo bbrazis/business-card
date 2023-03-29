@@ -7,8 +7,6 @@
     --body: Arial, sans-serif;
     --heading: Georgia, serif;
     --black: #222;
-    --rotateX: 0deg;
-    --rotateY: 0deg;
 }
 
 @property --gradient-angle {

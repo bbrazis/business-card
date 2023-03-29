@@ -60,7 +60,6 @@ body {
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
     transition: transform 250ms ease;
-    animation: rotation 20s linear infinite;
     /*
     Challenge:
     Find a color palette you like on Coolors.co
@@ -114,6 +113,7 @@ body {
         var(--brunswick-green));
     transform: translateZ(-50px);
     animation: pulse 5s linear infinite;
+    animation: rotation 20s linear infinite;
 }
 
 .card > div {

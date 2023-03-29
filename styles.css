@@ -30,6 +30,12 @@ body {
     background-color: var(--black);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .avatar {
     width: 150px;
     object-fit: contain;
@@ -52,7 +58,7 @@ body {
     height: 150px;
     grid-gap: 1rem;
     transform-style: preserve-3d;
-    transform: perspective(5000px) translateX(var(--rotateX)) translateY(var(--rotateY));
+    transform: perspective(5000px) rotateX(--rotateX) rotateY(--rotateY);
     transition: transform 250ms ease;
     animation: rotation 20s linear infinite;
     /*

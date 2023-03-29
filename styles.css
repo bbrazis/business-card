@@ -56,7 +56,7 @@ body {
     transform-style: preserve-3d;
     transform: perspective(5000px) translateX(var(--rotateX)) translateY(var(--rotateY));
     transition: transform 250ms ease;
-	animation: rotation 20s linear infinite;
+    animation: rotation 20s linear infinite;
     /*
     Challenge:
     Find a color palette you like on Coolors.co
@@ -67,6 +67,11 @@ body {
 @keyframes rotation {
 	0% { --gradient-angle: rotate(0)}
 	100% { --gradient-angle: rotate(180deg)}
+}
+
+@keyframes pulse {
+	0% { filter: blur(3.5rem)}
+	100% { filter: blur(2rem)}
 }
 
 .card::before,
@@ -103,6 +108,7 @@ body {
         var(--fern-green),
         var(--brunswick-green));
     transform: translateZ(-50px);
+    animation: pulse 20s linear infinite;
 }
 
 .card > div {

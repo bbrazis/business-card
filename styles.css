@@ -71,7 +71,8 @@ body {
 
 @keyframes pulse {
 	0% { filter: blur(3.5rem)}
-	100% { filter: blur(2rem)}
+	50% { filter: blur(2rem)}
+	100% { filter: blur(3.5rem)}
 }
 
 .card::before,

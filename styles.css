@@ -108,7 +108,7 @@ body {
         var(--fern-green),
         var(--brunswick-green));
     transform: translateZ(-50px);
-    animation: pulse 20s linear infinite;
+    animation: pulse 5s linear infinite;
 }
 
 .card > div {
